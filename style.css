@@ -60,7 +60,7 @@ nav{
     flex:1;
 }
 
-.intro-text p{
+.issuedate p{
     display: block;
     margin: auto;
     width: 50%;
@@ -68,10 +68,24 @@ nav{
     text-align: center;
 }
 
-.intro-text h1{
+.article h1 {
     display: block;
     margin: auto;
     width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.article h3 {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+p {
+    display: block;
+    margin: auto;
+    width: 70%;
     padding: 10px;
     text-align: center;
 }
@@ -135,4 +149,32 @@ nav{
         height:40%
     }
     }
+
+    .article{
+        border:2px #212360 solid;
+        padding:60px;
+    }
+
+    @media(min-width: 760px){
+    .pastissues {
+        display:flex;
+        flex-wrap: wrap;
+        flex-basis: 12%;
+        justify-content: space-between;
+    }
+
+     .pastissues div{
+        border:2px #212360 solid;
+        padding:5px;
+        align-items:center;
+    }
+    }
+
+   
+
+    
+   
+    
+    }
 }
+
