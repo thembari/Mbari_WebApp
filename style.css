@@ -1,0 +1,138 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+    
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    background: #212360;
+}
+
+.logo-container, .nav-links, .cart{
+    display:flex;
+}
+
+.logo-container{
+    background: #212360;
+    flex:1;
+}
+
+nav{
+    background: #212360;
+    flex:2;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none ;
+}
+
+.nav-link {
+    color: #efe2d6;
+    font-size:16px;
+    text-decoration: none;
+}
+.cart{
+    background: #212360;
+    flex:1;
+    justify-content: flex-end;
+
+}
+
+.presentation {
+    display: flex;
+    width: 50%;
+    margin:auto;
+    min-height:40vh;
+    align-items: center;
+}
+
+.introduction{
+    flex:1;
+}
+
+.intro-text p{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.intro-text h1{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.cta{
+    padding:20px;
+    color:#212360;
+    background:#efe2d6;
+    width: auto;
+    height: auto;
+    cursor:pointer;
+    font-size:16px;
+    border:none;
+    margin:auto;
+    display: block;
+    text-align: center;
+}
+.cover{
+    flex:1;
+    height:40vh;
+}
+.cover img {
+    height:100%;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    animation:drop 1.5s ease;
+    padding:20px;
+    
+}
+
+@keyframes drop {
+    0%{
+        opacity: 0;
+        tranform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        tranform: translateY(0px);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-left: 5vh;
+        text-align:center;
+    }
+    .intro-text h1{
+        font-size:30px;
+    }
+    .intro-text p{
+        font-size: 18px;
+    }
+    .cta{
+        padding:10px 0px 0px 0px;
+    }
+    .cover img{
+        height:40%
+    }
+    }
+}
