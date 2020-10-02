@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="30">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fullpage.css"/>
     <link rel="stylesheet" href="./style.css"/>
     <title>The Mbari</title>
 </head>
@@ -14,8 +15,6 @@
             <img src="img/mbari logo ong.png" alt="Mbari Logo" width="100" height="100">
         </div>
         
-
-
         <nav>
             <ul class="nav-links">
                 <li><a class="nav-link" href="#">Past Issues</a></li>
@@ -28,12 +27,13 @@
         </div>        
     </header>
 
+
+    </div>
     <main>
-        <section class="presentation">
+        <div id="fullpage">
+        <section class="section s0">
             <div class="cover">
                 <img src="./img/vii(1).png"/>
-            </div>
-            <div class="issuedate">
                 <h2>November 2020</h2>
              </div>
         <br>
@@ -41,7 +41,7 @@
         <br>   
         <br>      
         </section>
-        <section class="magazine">
+        <section class="section s1">
             <div class="article 1">
                     <h1>Short Story</h1>
                     <h3>Mr. E Author</h3>
@@ -49,68 +49,54 @@
                     <p>Preview presenting poetry or prose or picture. </p>
                     <br>
                     <button class="cta">Read</button>  
-                </div>
+            </div>
                
-            </div>
+        </section>
+        <section class="section s2">
             <div class="article 2">
                     <h1>Short Story 2</h1>
                     <h3>Mr. E Author</h3>
+                    <br>
+                    <p>This is some simple sample text.</p>
                   <button class="cta">Read</button>  
-                </div>
-            </div>
-            <div class="article 3">
-                    <h1>Short Story 3</h1>
-                    <h3>Mr. E Author</h3>
-                  <button class="cta">Read</button>  
-                </div>
-            </div>
-            <div class="article 1">
-                    <h1>Short Story</h1>
-                    <h3>Mr. E Author</h3>
-                    <button class="cta">Read</button>  
-                </div>
-              
-            </div>
-            <div class="article 2">
-                    <h1>Short Story 2</h1>
-                    <h3>Mr. E Author</h3>
-                  <button class="cta">Read</button>  
-                </div>
-                
-            </div>
-            <div class="article 3">
-                    <h1>Short Story 3</h1>
-                    <h3>Mr. E Author</h3>
-                  <button class="cta">Read</button>  
-                </div>
-                
-            </div>
-            <div class="article 1">
-                    <h1>Short Story</h1>
-                    <h3>Mr. E Author</h3>
-                   <button class="cta">Read</button>  
-                </div>
-               
-            </div>
-            <div class="article 2">
-                    <h1>Short Story 2</h1>
-                    <h3>Mr. E Author</h3>
-                 <button class="cta">Read</button>   
-                </div>
-                
-            </div>
-            <div class="article 3">
-                    <h1>Short Story 3</h1>
-                    <h3>Mr. E Author</h3>
-                   <button class="cta">Read</button> 
-                </div>
-                
             </div>
         </section>
-<br>
-<br>
-<br>
-        <section>
+        <section class="section s3">
+            <div class="article 3">
+                    <h1>Short Story 3</h1>
+                    <h3>Mr. E Author</h3>
+                  <button class="cta">Read</button>  
+            </div>           
+        </section>
+        <section class="section s4">
+            <div class="article 4">
+                    <h1>Short Story 4</h1>
+                    <h3>Mr. E Author</h3>
+                    <button class="cta">Read</button>  
+            </div>
+        </section>
+        <section class="section s5">
+             <div class="article 5">
+                    <h1>Short Story 5</h1>
+                    <h3>Mr. E Author</h3>
+                  <button class="cta">Read</button>  
+            </div>           
+        </section>
+        <section class="section s6">
+            <div class="article 6">
+                    <h1>Short Story 6</h1>
+                    <h3>Mr. E Author</h3>
+                  <button class="cta">Read</button>  
+            </div>
+        </section>    
+        <section class="section s7">
+            <div class="article 7">
+                    <h1>Short Story 7</h1>
+                    <h3>Mr. E Author</h3>
+                   <button class="cta">Read</button> 
+            </div>
+        </section>
+        <section class="section s8">
             <div class="pastissues">
                 <div class="issue1">
                     <h2>ISSUE I</h2>
@@ -130,9 +116,12 @@
                 <div class="issue6">
                     <h2>ISSUE VI</h2>
                 </div>              
-            </div>
+        </div>
         </section>
 
     </main>
+
+    <script src="./fullpage.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
